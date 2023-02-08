@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="calc.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <title>WHAD - Betting Calculator</title>
+  </head>
+  <body>
+    <canvas id="confetti-canvas"></canvas>
+	<script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+    <script src="confetti.js"></script>
+    <div id="toggle-container">
+      <input type="checkbox" id="toggle-switch">
+      <label for="toggle-switch"></label>
+    </div>    
+    <header>
+      <h1>Betting Payout Calculator</h1>
+      <div style="text-align: center;"><p>Calculate American or Decimal Odds</p></div>
+    </header>
+    <main>
+      <form id="bet-form">
+        <label for="stake">Stake:</label>
+        <input type="text" id="stake" name="stake" required>
+        <br>
+        <label for="odds">Odds:</label>
+        <input type="text" id="odds" name="odds" required>
+        <br>
+        <label for="odds-type">Format:</label>
+        <select id="odds-type" name="odds-type">
+          <option value="american">American</option>
+          <option value="decimal">Decimal</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Calculate">
+        <button id="toggle-button">
+          <div id="speaker-icon"><i class="fas fa-volume-up"></i></div>
+        </button>
+      </form>
+      <div id="result">
+        <p id="payout-output"></p>
+        <p id="profit-output"></p>
+      </div>
+    </main>
+    <div id="pms-fanduel" style="text-align: center;">
+    <a href="https://www.fanduel.com/mcafee">
+      <img src="pms.png" alt="Fanduel.com/mcafee" style="width:60%" target="_blank">
+    </a>
+  </div>
+  <br>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <div class="container">
+      <p>Made with ChatGPT 🤖. Prompts by @RockyGPT. Not affiliated with PMI</p>
+    </div>
+  </footer>
+  
+</html>
