@@ -182,3 +182,15 @@ footer {
   font-size: 14px;
   width: 100%;
 }
+
+footer p {
+  display: inline-block;
+}
+
+footer span {
+  display: inline-block;
+}
+
+footer a {
+  color: #008080;
+}
